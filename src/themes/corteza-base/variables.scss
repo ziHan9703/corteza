@@ -1,0 +1,115 @@
+$wideminwidth:767px !default;
+$confortableminwidth:1020px !default;
+
+$logo: 'img/logo.png' !default;
+$icon-logo: 'img/icon.png' !default;
+
+// Paths
+$fonts_dir : './fonts/' !default;
+
+// Typography
+$regular: 'nunito_sansregular' !default;
+$bold: 'nunito_sansbold' !default;
+$semibold: 'nunito_sanssemibold' !default;
+$font-size-base: 1rem !default;
+
+$font-family-base:      $regular !default;
+$headings-font-family:  $semibold !default;
+
+// Color system
+$white:         #fff !default;
+$black:         #000 !default;
+$primary:       #4D7281 !default;
+$secondary:     #90A3B1 !default;
+$success:       #719430 !default;
+$warning:       #F5D380 !default;
+$danger:        #E54122 !default;
+$light:         #E4E9EF !default;
+$dark:          #1e2224 !default;
+
+$gray-200:      #F3F3F5 !default;
+
+// Grid - maybe not the smartest idea to change this but let's see
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1500px
+) !default;
+
+// Options
+$enable-rounded:   true !default;
+$enable-gradients: false !default;
+$enable-responsive-font-sizes: true !default;
+
+// Body
+$body-bg: $gray-200 !default;
+
+// Card
+$card-border-radius: 1rem !default;
+$card-border-width:  0 !default;
+$card-cap-bg:        $gray-200 !default;
+
+// Tables
+$table-cell-padding-sm: 0.25rem !default;
+$table-hover-bg:     $gray-200 !default;
+
+// Buttons
+$btn-font-size: $font-size-base !default;
+$btn-padding-y: 0.25em !default;
+$btn-padding-x: 1em !default;
+
+$btn-focus-width:       0.2rem !default;
+$btn-focus-box-shadow:  none !default;
+$btn-active-box-shadow: none !default;
+
+$btn-font-size-lg:  16px !default;
+$btn-font-family:   $semibold !default;
+
+$topbar-height:         64px !default;
+
+// Navbar
+$navbar-bg:             $white !default;
+$navbar-color:          $black !default;
+$navbar-border:         $primary !default;
+$navbar-active-bg:      $white !default;
+$navbar-active-color:   $primary !default;
+$navbar-active-border:  $primary !default;
+$navbar-hover-bg:       $white !default;
+$navbar-hover-color:    $primary !default;
+$navbar-hover-border:   $primary !default;
+$navbar-height:         50px !default;
+$navbar-padding-y:      0 !default;
+$navbar-padding-x:      0 !default;
+
+$navbar-toggler-font-size:  24px !default;
+$sidebar-width:         320px !default;
+$sidebar-bg:            #F4F7FA;
+
+// Pagination
+$pagination-color:        $dark !default;
+$pagination-disabled-bg:  transparent !default;
+$pagination-bg:           transparent !default;
+$pagination-active-bg:    $dark !default;
+$pagination-border-width: 0 !default;
+
+// Forms
+$input-font-size: $font-size-base !default;
+
+$input-border-color:  $light !default;
+$input-border-width:  2px !default;
+
+$input-btn-focus-width:     0 !default;
+$input-focus-box-shadow:    none !default;
+$input-focus-border-color:  $primary !default;
+
+/* stylelint-disable */
+// This is used within corteza-webapp-compose/src/lib/block/Calendar/feedLoader/
+// to determine default event colors
+:export {
+  primary: $primary;
+  danger: $danger;
+  secondary: $secondary;
+}
+/* stylelint-enable */
